@@ -19,7 +19,8 @@
   "height":512,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"e0b5306f-d3e7-461e-b5e9-7445edf39e29","blendMode":0,"displayName":"default","isLocked":false,"name":"e0b5306f-d3e7-461e-b5e9-7445edf39e29","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"0a42b276-b60e-4c0d-a177-6f937ce8e9ac","blendMode":0,"displayName":"Contorno","isLocked":false,"name":"0a42b276-b60e-4c0d-a177-6f937ce8e9ac","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"c5fdc542-b48f-466f-83fd-db8368819ed0","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"c5fdc542-b48f-466f-83fd-db8368819ed0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_peao",
   "nineSlice":null,
