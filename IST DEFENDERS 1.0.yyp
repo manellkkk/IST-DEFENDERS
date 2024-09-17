@@ -34,12 +34,18 @@
   },
   "name":"IST DEFENDERS 1.0",
   "resources":[
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"obj_peao","path":"objects/obj_peao/obj_peao.yy",},},
+    {"id":{"name":"rm_inicial","path":"rooms/rm_inicial/rm_inicial.yy",},},
+    {"id":{"name":"scr_movimentacao","path":"scripts/scr_movimentacao/scr_movimentacao.yy",},},
+    {"id":{"name":"spr_blococentral","path":"sprites/spr_blococentral/spr_blococentral.yy",},},
+    {"id":{"name":"spr_fundo","path":"sprites/spr_fundo/spr_fundo.yy",},},
+    {"id":{"name":"spr_peao","path":"sprites/spr_peao/spr_peao.yy",},},
+    {"id":{"name":"spr_posicao","path":"sprites/spr_posicao/spr_posicao.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_inicial","path":"rooms/rm_inicial/rm_inicial.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
