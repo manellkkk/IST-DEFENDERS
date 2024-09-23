@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_movimentacao",
+  "%Name":"scr_casas",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_movimentacao",
+  "name":"scr_casas",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

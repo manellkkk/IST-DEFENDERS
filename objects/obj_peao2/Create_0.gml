@@ -5,7 +5,7 @@ square = 64;
 dice = 0;
 houses = 0;
 spd = 1;
-position = 0;
+position = 14;
 total_de_casas = 56;
 vez = 0;
 

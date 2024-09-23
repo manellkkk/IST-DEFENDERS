@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_peao, 0, x, y, 0.125, 0.125, 0, c_red, 1);

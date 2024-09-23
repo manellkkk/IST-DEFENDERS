@@ -1,4 +1,4 @@
-if(keyboard_check_pressed(vk_enter) && global.vez == 0){
+if(keyboard_check_pressed(vk_enter) && global.vez == 3){
 	dice = irandom_range(1, 6);
 	position += dice;
 	
@@ -6,5 +6,5 @@ if(keyboard_check_pressed(vk_enter) && global.vez == 0){
 
 	x = casas[position][0];
 	y = casas[position][1];
-	global.vez++;
+	global.vez = 0;
 }

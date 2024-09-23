@@ -1,4 +1,4 @@
-if(keyboard_check_pressed(vk_enter) && global.vez == 0){
+if(keyboard_check_pressed(vk_enter) && global.vez == 1){
 	dice = irandom_range(1, 6);
 	position += dice;
 	
