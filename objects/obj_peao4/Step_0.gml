@@ -1,10 +1,22 @@
-if(keyboard_check_pressed(vk_enter) && global.vez == 3){
-	dice = irandom_range(1, 6);
-	position += dice;
+if(global.turno == 3 && ganhou == false){
+	position += obj_dado.dice;
+	casas_percorridas += obj_dado.dice;
+
+	if(casas_percorridas < 56){
+		position = position % 56;
+	} else if(passou == false){
+		position = 55 + obj_dado.dice;
+		passou = true;
+	}
 	
-	position = position % total_de_casas;
+	if(position >= 61){
+		position = 61;
+		ganhou = true;
+		show_debug_message("Ganhou!");
+	}
 
 	x = casas[position][0];
 	y = casas[position][1];
-	global.vez = 0;
+	
+	obj_dado.dice = 0;
 }

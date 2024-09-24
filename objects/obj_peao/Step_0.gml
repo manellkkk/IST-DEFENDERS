@@ -1,10 +1,14 @@
-if(keyboard_check_pressed(vk_enter) && global.vez == 0){
-	dice = irandom_range(1, 6);
-	position += dice;
+if(global.turno == 0 && ganhou == false){
+	position += obj_dado.dice;
+	obj_dado.dice = 0;
 	
-	position = position % total_de_casas;
+	if(position >= 61){
+		position = 61;
+		passou = true;
+		ganhou = true;
+		show_debug_message("Ganhou!");
+	}
 
 	x = casas[position][0];
 	y = casas[position][1];
-	global.vez++;
 }

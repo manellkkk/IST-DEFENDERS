@@ -35,6 +35,7 @@
   "name":"IST DEFENDERS 1.0",
   "resources":[
     {"id":{"name":"ft1","path":"fonts/ft1/ft1.yy",},},
+    {"id":{"name":"obj_dado","path":"objects/obj_dado/obj_dado.yy",},},
     {"id":{"name":"obj_peao","path":"objects/obj_peao/obj_peao.yy",},},
     {"id":{"name":"obj_peao2","path":"objects/obj_peao2/obj_peao2.yy",},},
     {"id":{"name":"obj_peao3","path":"objects/obj_peao3/obj_peao3.yy",},},
@@ -43,6 +44,7 @@
     {"id":{"name":"scr_casas","path":"scripts/scr_casas/scr_casas.yy",},},
     {"id":{"name":"spr_peao","path":"sprites/spr_peao/spr_peao.yy",},},
     {"id":{"name":"spr_posicao","path":"sprites/spr_posicao/spr_posicao.yy",},},
+    {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},},
     {"id":{"name":"ts_tabuleiro","path":"tilesets/ts_tabuleiro/ts_tabuleiro.yy",},},
   ],
   "resourceType":"GMProject",

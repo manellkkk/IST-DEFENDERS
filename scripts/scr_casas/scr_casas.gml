@@ -71,5 +71,3 @@ function criarTabuleiro(){
 	
 	return casas;
 }
-
-global.vez = 0;
