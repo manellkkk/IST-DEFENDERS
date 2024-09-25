@@ -1,3 +1,19 @@
+function abrirPergunta(_x, _y, _pergunta, _opcoes, _respostaCorreta){
+	with(instance_create_depth(_x, _y, -999, obj_pergunta)){
+		pergunta = _pergunta;
+		opcoes = _opcoes;
+		
+		margin = 12;
+		draw_set_font(ft_pergunta);
+		
+		width = 1;
+		
+		for(var i = 0; i < 4; i++){
+			
+		}
+	}
+}
+
 global.questoes = [
 	{
 		dificuldade: 1,

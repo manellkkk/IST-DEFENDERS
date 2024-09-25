@@ -29,3 +29,7 @@ switch(global.turno){
 		}
 	break;
 }
+
+if(keyboard_check_pressed(vk_shift)){
+	abrirPergunta();
+}
