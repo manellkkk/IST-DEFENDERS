@@ -31,5 +31,5 @@ switch(global.turno){
 }
 
 if(keyboard_check_pressed(vk_shift)){
-	abrirPergunta();
+	abrir_quiz();
 }

@@ -1,24 +1,53 @@
-// Definir largura e altura da caixinha
-var box_width = 800;
-var box_height = 800;
+// Número de respostas
+var n = ds_list_size(respostas_atual);
 
-// Calcular posição central da tela
-var x_center = display_get_width() / 2 - box_width / 2;
-var y_center = display_get_height() / 2 - box_height / 2;
+// Altura da pergunta
+var altura_pergunta = string_height(pergunta_atual);
 
-// Definir a cor da caixinha e desenhá-la
-draw_set_color(c_white);
-draw_rectangle(x_center, y_center, x_center + box_width, y_center + box_height, false);
+// Altura total das respostas
+var altura_respostas = 0;
+for (var i = 0; i < n; i++) {
+    var resposta = ds_list_find_value(respostas_atual, i);
+    altura_respostas += string_height(resposta); // Soma a altura de cada resposta
+}
 
-// Definir cor e fonte do texto
-draw_set_color(c_black);
-draw_set_font(ft_pergunta);  // Substitua 'font0' por sua fonte desejada
+// Margens
+var margem_superior = 12; // Margem superior de 12 pixels
+var margem_inferior = 12; // Margem inferior de 12 pixels
 
-// Texto da pergunta
-var question = "Qual a capital da França?";
-draw_text(x_center + 10, y_center + 10, question);
+// Dimensões do fundo
+var altura_fundo = altura_pergunta + altura_respostas + margem_superior + margem_inferior;
+var largura_fundo = room_width; // Ou ajuste conforme necessário
 
-// Opções de resposta
-draw_text(x_center + 10, y_center + 50, "A) Paris");
-draw_text(x_center + 10, y_center + 70, "B) Roma");
-draw_text(x_center + 10, y_center + 90, "C) Madrid");
+// Posição Y do fundo
+var pos_y_fundo = (room_height / 4 - altura_fundo / 2); // Centraliza o fundo na tela
+
+// Desenhar o sprite de fundo
+draw_sprite_stretched(spr_quiz_fundo, 0, 0, pos_y_fundo, largura_fundo, altura_fundo);
+
+// Desenhar a pergunta
+draw_set_halign(fa_center);
+draw_set_font(ft_pergunta);
+draw_text(room_width / 2, pos_y_fundo + margem_superior, pergunta_atual);
+
+// Posição Y das respostas
+var pos_y_respostas = pos_y_fundo + margem_superior + altura_pergunta; // Posição inicial para as respostas
+
+// Desenhar as respostas
+for (var i = 0; i < n; i++) {
+    var resposta = ds_list_find_value(respostas_atual, i);
+    var pos_y_resposta = pos_y_respostas + i * string_height(resposta);
+    
+    draw_text(room_width / 2, pos_y_resposta, resposta);
+    
+    // Verifica se o mouse está sobre a resposta e se foi clicado
+    if (mouse_check_button_pressed(mb_left) && mouse_x >= (room_width / 2 - string_width(resposta) / 2) && mouse_x <= (room_width / 2 + string_width(resposta) / 2) && mouse_y >= pos_y_resposta && mouse_y <= pos_y_resposta + string_height(resposta)) {
+        // Aqui você chama a verificação da resposta
+        if (resposta == resposta_correta) {
+            show_message("Você acertou!");
+        } else {
+            show_message("Você errou. A resposta correta era: " + resposta_correta);
+        }
+    }
+}
+

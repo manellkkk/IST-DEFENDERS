@@ -1,17 +1,9 @@
-function abrirPergunta(_x, _y, _pergunta, _opcoes, _respostaCorreta){
-	with(instance_create_depth(_x, _y, -999, obj_pergunta)){
-		pergunta = _pergunta;
-		opcoes = _opcoes;
-		
-		margin = 12;
-		draw_set_font(ft_pergunta);
-		
-		width = 1;
-		
-		for(var i = 0; i < 4; i++){
-			
-		}
-	}
+function abrir_quiz() {
+    // Checa se o objeto do quiz já está presente na room
+    if (!instance_exists(obj_quiz)) {
+        // Cria uma instância do objeto 'obj_quiz' no centro da tela
+        instance_create_layer(room_width / 2, room_height / 2, "quiz", obj_quiz);
+    }
 }
 
 global.questoes = [

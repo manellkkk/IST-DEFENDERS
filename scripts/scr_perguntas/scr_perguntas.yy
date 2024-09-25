@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"perguntas",
+  "%Name":"scr_perguntas",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"perguntas",
+  "name":"scr_perguntas",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
