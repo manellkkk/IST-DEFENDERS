@@ -1,10 +1,9 @@
-function abrir_quiz() {
-    // Checa se o objeto do quiz já está presente na room
-    if (!instance_exists(obj_quiz)) {
-        // Cria uma instância do objeto 'obj_quiz' no centro da tela
-        instance_create_layer(room_width / 2, room_height / 2, "quiz", obj_quiz);
-    }
+function mostrar_pergunta() {
+    var pergunta_index = irandom_range(0, 13);
+    global.pergunta_atual = global.questoes[pergunta_index];  // Armazena a pergunta atual globalmente
 }
+
+
 
 global.questoes = [
 	{
