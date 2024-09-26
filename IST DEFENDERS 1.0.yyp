@@ -41,7 +41,6 @@
     {"id":{"name":"obj_peao2","path":"objects/obj_peao2/obj_peao2.yy",},},
     {"id":{"name":"obj_peao3","path":"objects/obj_peao3/obj_peao3.yy",},},
     {"id":{"name":"obj_peao4","path":"objects/obj_peao4/obj_peao4.yy",},},
-    {"id":{"name":"obj_quiz","path":"objects/obj_quiz/obj_quiz.yy",},},
     {"id":{"name":"rm_inicial","path":"rooms/rm_inicial/rm_inicial.yy",},},
     {"id":{"name":"scr_casas","path":"scripts/scr_casas/scr_casas.yy",},},
     {"id":{"name":"scr_perguntas","path":"scripts/scr_perguntas/scr_perguntas.yy",},},
