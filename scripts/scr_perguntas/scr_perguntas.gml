@@ -1,6 +1,7 @@
 function mostrar_pergunta() {
     var pergunta_index = irandom_range(0, 13);
     global.pergunta_atual = global.questoes[pergunta_index];  // Armazena a pergunta atual globalmente
+	room_goto(rm_quiz);
 }
 
 

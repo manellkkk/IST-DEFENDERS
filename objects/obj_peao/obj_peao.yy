@@ -10,8 +10,8 @@
   "name":"obj_peao",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Principal",
+    "path":"folders/Objects/Principal.yy",
   },
   "parentObjectId":null,
   "persistent":false,

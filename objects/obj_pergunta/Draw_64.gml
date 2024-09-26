@@ -1,5 +1,5 @@
-draw_set_font(ft1)
-draw_set_color(c_purple)
+draw_set_font(ft1);
+draw_set_color(c_white);
 
 if (global.mostrar_pergunta) {
     // Exibe a pergunta carregada
@@ -9,6 +9,9 @@ if (global.mostrar_pergunta) {
     var alternativas = q.alternativas;
     var resposta = q.resposta;
     var dificuldade = q.dificuldade;
+	
+	op_max = array_length(alternativas);
+	dist = 50;
     
     // Concatena as alternativas em uma string
     var alternativas_str = "\n";
@@ -16,6 +19,9 @@ if (global.mostrar_pergunta) {
         alternativas_str += string(alternativas[i]) + "\n";
     }
     
-    // Desenha o texto com a pergunta, alternativas, dificuldade e resposta
-    draw_text_ext(30, 30, string(dificuldade) + "\n" + string(pergunta) + alternativas_str + "\nResposta: " + string(resposta), 90, display_get_gui_width() - 30);
+    for(var i = 0; i < op_max; i++){
+		draw_set_halign(fa_center);
+		draw_set_valign(fa_middle);
+		draw_text(display_get_gui_width() / 2, display_get_gui_height() + dist * i, string(alternativas[i]));
+	}
 }

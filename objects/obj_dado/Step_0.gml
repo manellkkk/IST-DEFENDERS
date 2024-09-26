@@ -2,8 +2,7 @@ if(keyboard_check_pressed(vk_space)){
 	dice = irandom_range(1, 6);
 	global.turno++;
 	
-	mostrar_pergunta();  // Função que carrega uma nova pergunta
-    global.mostrar_pergunta = true;  // Ativa a flag para desenhar a pergunta
+	mostrar_pergunta();
 }
 
 if(global.turno > 3){
